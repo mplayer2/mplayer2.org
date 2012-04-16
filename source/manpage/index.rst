@@ -1,0 +1,3 @@
+.. contents::
+
+.. include:: man.rst
