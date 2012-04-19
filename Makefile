@@ -49,6 +49,10 @@ html: source/manpage/man.rst
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
+devserver:
+	@echo "Starting webserver..."
+	cd build/dirhtml && python -m SimpleHTTPServer
+
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
 	@echo
