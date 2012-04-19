@@ -1,25 +1,9 @@
-Welcome
-=======
+.. unfortunately reST doesn't support nested inline markup: resort to raw html
+.. raw:: html
 
-Welcome to the mplayer2 project’s website.
-
-mplayer2 is an advanced general-purpose video player. It is a fork of
-the original `MPlayer <http://mplayerhq.hu>`_, contains significant
-further development and supports a number of features not available in
-other Unix players.
-
-Contents
-========
-
-.. toctree::
-    :maxdepth: 1
-
-    downloads
-    faq
-    Manual <manpage/index>
-    differences
-    bugspatches
-
+    <p class="lead">mplayer2 is an advanced general-purpose video player. A
+    fork of the original <a href="http://www.mplayerhq.hu">MPlayer project</a>,
+    it contains significant further development and supports a number</a>
 
 Other destinations
 ==================

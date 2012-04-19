@@ -1,0 +1,18 @@
+body {
+  position: relative;
+  padding-top: 90px;
+  background-color: #fff;
+}
+
+.read-more {
+  float: right;
+  font-size: 85%;
+}
+
+.small-article-infos {
+  margin-top: -0.6em;
+}
+
+#most-users {
+  vertical-align: baseline;
+}
