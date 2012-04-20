@@ -7,12 +7,3 @@
 
 For those who are curious about the differences click here for a
 `comparison <differences>`_.
-
-Other destinations
-==================
-
-* `Development Site <http://devel.mplayer2.org/>`_ -- Information for
-  developers.
-* `Bug Tracker <http://devel.mplayer2.org/wiki/Bugs>`_ -- Bug tracker.
-* `Mailing Lists <http://lists.mplayer2.org/>`_ -- Mailing lists for
-  users and developers.

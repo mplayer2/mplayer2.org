@@ -12,6 +12,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 .PHONY: server website update-man clean help
+.DEFAULT_GOAL := website
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"

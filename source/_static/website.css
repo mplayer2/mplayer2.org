@@ -16,3 +16,27 @@ body {
 #most-users {
   vertical-align: baseline;
 }
+
+.container a.headerlink {
+  font-size: 0.8em;
+  padding: 0 4px 0 4px;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.container *:hover > a.headerlink { visibility: visible; }
+
+.copyright {
+  text-align: center;
+  font-size: 85%;
+  margin-top: -1em;
+}
+
+table, table * {
+  border: 0;
+}
+
+.footer-separator {
+  margin-top: 2em;
+}
+

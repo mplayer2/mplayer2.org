@@ -30,7 +30,6 @@ then builds the player statically linked against those.
 
     "`mplayer2.git <http://git.mplayer2.org/mplayer2/>`_", "Player only"
     "`mplayer2-build.git <http://git.mplayer2.org/mplayer2-build/>`_", "Helper that automatically builds new Libav and some other dependencies too.
-
     **Recommended for most users.**"
 
 
@@ -38,7 +37,6 @@ Unofficial binaries
 -------------------
 
 These binaries are provided by third parties. Use at your own risk!
-
 
 .. csv-table::
     :header: "Platform", ""
@@ -58,4 +56,5 @@ These binaries are provided by third parties. Use at your own risk!
 Previous releases
 -----------------
 
-You can find an archive of our releases via `HTTP <http://ftp.mplayer2.org/pub/archive/release/>`_ or `FTP <ftp://ftp.mplayer2.org/pub/archive/release/>`_.
+You can find an archive of our releases via `HTTP <http://ftp.mplayer2.org/pub
+/archive/release/>`_ or `FTP <ftp://ftp.mplayer2.org/pub/archive/release/>`_.

@@ -18,12 +18,13 @@
           <a class="brand" href="/">mplayer2</a>
           <div class="nav-collapse">
             <ul class="nav">
-			  <li><a href="{{ pathto('index') }}">Overview</a></li>
-			  <li><a href="{{ pathto('downloads') }}">Downloads</a></li>
-			  <li><a href="{{ pathto('manpage') }}">Manpage</a></li>
-			  <li><a href="{{ pathto('faq') }}">FAQ</a></li>
-			  <li><a href="http://devel.mplayer2.org/wiki/Bugs">Bug reports</a></li>
-			  <li><a href="http://lists.mplayer2.org/">Mailing Lists</a></li>
+              <li><a href="{{ pathto('index') }}">Overview</a></li>
+              <li><a href="{{ pathto('downloads') }}">Downloads</a></li>
+              <li><a href="{{ pathto('manpage') }}">Manpage</a></li>
+              <li><a href="{{ pathto('faq') }}">FAQ</a></li>
+              <li><a href="http://devel.mplayer2.org/">Development site</a></li>
+              <li><a href="http://devel.mplayer2.org/wiki/Bugs">Bug reports</a></li>
+              <li><a href="http://lists.mplayer2.org/">Mailing Lists</a></li>
             </ul>
           </div>
         </div>
@@ -33,6 +34,8 @@
     <div class="container">
 	  {% block body %}
 	  {% endblock %}
+      <hr class="soften footer-separator">
+      <p class="copyright">Copyright &copy; 2011-2012 mplayer2 project</p>
     </div>
   </body>
 </html>
