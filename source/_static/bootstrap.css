@@ -397,12 +397,12 @@ h6 {
   color: #999999;
   text-transform: uppercase;
 }
-.page-header {
+h1, h2, h3 {
   padding-bottom: 17px;
   margin: 18px 0;
   border-bottom: 1px solid #eeeeee;
 }
-.page-header h1 {
+h1 {
   line-height: 1;
 }
 ul,
@@ -1187,31 +1187,31 @@ table {
   border-spacing: 0;
   background-color: transparent;
 }
-.table {
+table {
   width: 100%;
   margin-bottom: 18px;
 }
-.table th,
-.table td {
+table th,
+table td {
   padding: 8px;
   line-height: 18px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-.table th {
+table th {
   font-weight: bold;
 }
-.table thead th {
+table thead th {
   vertical-align: bottom;
 }
-.table colgroup + thead tr:first-child th,
-.table colgroup + thead tr:first-child td,
-.table thead:first-child tr:first-child th,
-.table thead:first-child tr:first-child td {
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
   border-top: 0;
 }
-.table tbody + tbody {
+table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 .table-condensed th,
@@ -1260,12 +1260,13 @@ table {
   -moz-border-radius: 0 0 4px 0;
   border-radius: 0 0 4px 0;
 }
+
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-.table tbody tr:hover td,
-.table tbody tr:hover th {
+table tbody tr:hover td,
+table tbody tr:hover th {
   background-color: #f5f5f5;
 }
 table .span1 {
@@ -2424,7 +2425,7 @@ input[type="submit"].btn.btn-mini {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
-.alert {
+.alert, .admonition {
   padding: 8px 35px 8px 14px;
   margin-bottom: 18px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -2435,8 +2436,9 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px;
   color: #c09853;
 }
-.alert-heading {
+.alert-heading, .admonition-title {
   color: inherit;
+	font-weight: bold;
 }
 .alert .close {
   position: relative;
@@ -2444,7 +2446,7 @@ input[type="submit"].btn.btn-mini {
   right: -21px;
   line-height: 18px;
 }
-.alert-success {
+.alert-success, .note {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847;
