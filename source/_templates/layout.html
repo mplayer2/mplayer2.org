@@ -3,26 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>mplayer2</title>
-	<link href="{{ pathto('_static/bootstrap.css', 1) }}"
-		  media="screen" rel="stylesheet" type="text/css" />
-	<link href="{{ pathto('_static/website.css', 1) }}"
-		  media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ pathto('_static/bootstrap.css', 1) }}"
+        media="screen" rel="stylesheet" type="text/css" />
+    <style>body { padding-top: 60px; }</style>
+    <link href="{{ pathto('_static/bootstrap-responsive.css', 1) }}"
+        media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ pathto('_static/website.css', 1) }}"
+        media="screen" rel="stylesheet" type="text/css" />
   </head>
-  <body data-spy="scroll" data-target=".subnav" data-offset="50"
-	    data-twttr-rendered="true">
-
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">mplayer2</a>
-          <div class="nav-collapse">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="{{ pathto('index') }}">mplayer2</a>
+          <div class="nav-collapse collapse" style="height:0px;">
             <ul class="nav">
-              <li><a href="{{ pathto('index') }}">Overview</a></li>
               <li><a href="{{ pathto('downloads') }}">Downloads</a></li>
               <li><a href="{{ pathto('manpage') }}">Manpage</a></li>
               <li><a href="{{ pathto('faq') }}">FAQ</a></li>
-              <li><a href="http://devel.mplayer2.org/">Development site</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="http://devel.mplayer2.org/">Development wiki</a></li>
               <li><a href="http://devel.mplayer2.org/wiki/Bugs">Bug reports</a></li>
               <li><a href="http://lists.mplayer2.org/">Mailing Lists</a></li>
             </ul>
@@ -37,5 +44,16 @@
       <hr class="soften footer-separator">
       <p class="copyright">Copyright &copy; 2011-2012 mplayer2 project</p>
     </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+  <!-- Bootstrap JS, the minified bundle -->
+  <script src="{{ pathto('_static/bootstrap.js', 1) }}"></script>
+  <script>
+  $(document).ready(function(){
+    // Initialize tabs and pills
+    $('.note-tabs').tab();
+  });
+</script>
   </body>
 </html>
