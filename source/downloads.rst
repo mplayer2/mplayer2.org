@@ -22,7 +22,7 @@ then builds the player statically linked against those.
 
 .. note::
     See :ref:`this FAQ entry <faq-1>` about interaction with
-    existing MPlayer installs.
+    existing MPlayer installations.
 
 .. csv-table::
     :header: "Git repository", "Description"
@@ -45,7 +45,7 @@ These binaries are provided by third parties. Use at your own risk!
     :widths: 10, 90
 
     "Windows", "`binaries by lachs0r <http://mplayer2.srsfckn.biz/>`_ (may contain untested extra functionality)"
-    "Mac OS X", "`binaries by pigoz <http://code.google.com/p/mplayerosx-builds/>`_"
+    "Mac OS X", "`binaries by pigoz <http://code.google.com/p/mplayerosx-builds/>`_ (may contain untested extra functionality)"
     "Linux", "Provided through each distribution’s package repositories."
 
 .. warning::
