@@ -7,11 +7,16 @@
     <title>mplayer2</title>
     <link href="{{ pathto('_static/bootstrap.css', 1) }}"
         media="screen" rel="stylesheet" type="text/css" />
-    <style>body { padding-top: 60px; }</style>
+    <style>body { padding-top: 80px; }</style>
     <link href="{{ pathto('_static/bootstrap-responsive.css', 1) }}"
         media="screen" rel="stylesheet" type="text/css" />
     <link href="{{ pathto('_static/website.css', 1) }}"
         media="screen" rel="stylesheet" type="text/css" />
+    <style>
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  max-width: 940px;
+}
+    </style>
   </head>
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     <div class="navbar navbar-fixed-top">
@@ -25,9 +30,10 @@
           <a class="brand" href="{{ pathto('index') }}">mplayer2</a>
           <div class="nav-collapse collapse" style="height:0px;">
             <ul class="nav">
-              <li><a href="{{ pathto('downloads') }}">Downloads</a></li>
-              <li><a href="{{ pathto('manpage') }}">Manpage</a></li>
-              <li><a href="{{ pathto('faq') }}">FAQ</a></li>
+              {% import 'nav.html' as nav %}
+              {{ nav.item('downloads', pagename, pathto('downloads'), "Downloads") }}
+              {{ nav.item('manpage', pagename, pathto('manpage'), "Manpage") }}
+              {{ nav.item('faq', pagename, pathto('faq'), "FAQ") }}
               <li><a href="http://devel.mplayer2.org/wiki/Bugs">Bug reports</a></li>
               <li><a href="http://lists.mplayer2.org/">Mailing Lists</a></li>
               <li class="divider-vertical"></li>
