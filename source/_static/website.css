@@ -1,6 +1,15 @@
 body {
   position: relative;
-  background-color: #fff;
+  background: #fff url(bg-pattern.png) repeat top right;
+}
+
+#content-container {
+  margin-bottom: 20px;
+  padding: 50px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
 }
 
 .read-more {
