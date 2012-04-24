@@ -3,7 +3,7 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 MANPAGE_URL   = "http://git.mplayer2.org/uau/mplayer2.git/plain/DOCS/man/en/"
-			    "mplayer.rst?h=man"
+                "mplayer.rst?h=man"
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
