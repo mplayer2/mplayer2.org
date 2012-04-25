@@ -398,11 +398,11 @@ h6 {
   text-transform: uppercase;
 }
 h1, h2, h3 {
-  padding-bottom: 17px;
   margin: 18px 0;
   border-bottom: 1px solid #eeeeee;
 }
 h1 {
+  padding-bottom: 17px;
   line-height: 1;
 }
 ul,
