@@ -2,8 +2,10 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
-MANPAGE_URL   = "http://git.mplayer2.org/uau/mplayer2.git/plain/DOCS/man/en/"
-                "mplayer.rst?h=man"
+DOCS_FILES    = af.rst ao.rst mplayer.rst options.rst vf.rst vo.rst
+DOCS_URL      = http://git.mplayer2.org/uau/mplayer2.git/plain/DOCS/man/en/
+DOCS_BRANCH   = man
+
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
@@ -30,7 +32,8 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 update-man:
-	wget -O source/manpage/man.rst $(MANPAGE_URL)
+	mkdir -p source/docs/
+	$(foreach var,$(DOCS_FILES),wget -O source/docs/$(var) $(DOCS_URL)$(var)?h=$(DOCS_BRANCH);)
 
 website:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
