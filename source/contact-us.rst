@@ -1,9 +1,9 @@
 Contact us
 ==========
 
-.. warning::
-    If you want to report a bug or submit a patch, please also read our 
-    `bug reports page <../bug-reports>`_ for more informations.
+Here is a list of ways to contact us. If you want to report a bug or submit a
+patch, please also read our :doc:`bug reports page </bug-reports>` for more
+informations.
 
 Internet Relay Chat
 ___________________
