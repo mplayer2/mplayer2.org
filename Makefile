@@ -23,6 +23,7 @@ help:
 	@echo "  update-man  to update the man from mplayer2's git repository"
 	@echo "  clean       to clean the website build product"
 	@echo "  help        to show this help message"
+	@echo "  test        to run the sphinxblog testsuite"
 
 server:
 	@echo "Starting webserver..."
@@ -39,3 +40,6 @@ website:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
+
+test:
+	python -m unittest discover -s sphinxblog -p '*_test.py'
