@@ -24,5 +24,13 @@ class TestPost(unittest.TestCase):
     def test_body(self):
         self.assertEqual(self.post.body, "test")
 
+    def test_path_component(self):
+        self.assertEqual(self.post.path_component,
+                         "2012/05/01/lorem-ipsum.rst")
+
+    def test_url(self):
+        self.assertEqual(self.post.url,
+                         "/2012/05/01/lorem-ipsum")
+
 if __name__ == '__main__':
     unittest.main()

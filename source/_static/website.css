@@ -152,3 +152,18 @@ img#mplayer2-icon {
   width: 100px;
   height: 100px;
 }
+
+#latest-posts {
+	margin-top: 4em;
+}
+
+#latest-news > div > h2 + p {
+	font-size: 80%;
+}
+
+#latest-news > div > h2 {
+	font-size: 20px;
+	line-height: 20px;
+	border-bottom: none;
+	margin-bottom: 0;
+}

@@ -27,7 +27,7 @@ help:
 
 server:
 	@echo "Starting webserver..."
-	cd build/website && python -m SimpleHTTPServer
+	@cd build/website && python -m SimpleHTTPServer
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -37,7 +37,10 @@ update-man:
 	$(foreach var,$(DOCS_FILES),wget -O source/docs/$(var) $(DOCS_URL)$(var)?h=$(DOCS_BRANCH);)
 
 website:
-	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
+	@echo "Building posts..."
+	@python sphinxblog/gen.py
+	@echo "Building site..."
+	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 

@@ -10,3 +10,8 @@
 
 For those who are curious about the differences click here for a
 `comparison <differences>`_.
+
+Latest news
+===========
+
+.. include:: latest_posts.rst

@@ -1,8 +1,10 @@
 import os, re
+from jinja2 import Template
 
 class Post(object):
     def __init__(self, path):
-        self.path = path
+        self.__path = path
+        self.__empty = True
 
     @property
     def title(self):
@@ -16,7 +18,17 @@ class Post(object):
 
     @property
     def date(self):
-       return "/".join(self.__date_array())
+        return "/".join(self.__date_array())
+
+    @property
+    def url(self):
+        return "/%s" % os.path.splitext(self.path_component)[0]
+
+    @property
+    def path_component(self):
+        path_ary = self.__date_array()[::-1]
+        path_ary.append(os.path.basename(self.__path))
+        return "/".join(path_ary)
 
     @property
     def abstract(self):
@@ -28,13 +40,33 @@ class Post(object):
         self.__parse_data()
         return self.__body
 
+    def render(self, template_name='post'):
+        tmpl_file = open(os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            'templates', '%s.rst' % template_name))
+        template = Template(tmpl_file.read())
+        tmpl_file.close()
+        return template.render(post=self)
+
+    def render_to_base_path(self, base_path):
+        output_path = os.path.join(base_path, self.path_component)
+        if not os.path.exists(os.path.dirname(output_path)):
+            os.makedirs(os.path.dirname(output_path))
+
+        output = open(output_path, "w")
+        output.write(self.render())
+        output.close()
+
     def __date_array(self):
-        day_p   = os.path.dirname(self.path)
+        day_p   = os.path.dirname(self.__path)
         month_p = os.path.dirname(day_p)
         year_p  = os.path.dirname(month_p)
         return [os.path.basename(x) for x in [day_p, month_p, year_p]]
 
     def __parse_data(self):
+        if not self.__empty:
+            return None
+        self.__empty = False
         _in_abstract, _in_body = False, False
         _abstract_ary, _body_ary = [], []
         for line in self.__get_file_data():
@@ -71,7 +103,7 @@ class Post(object):
         self.__body = "".join(_body_ary).strip()
 
     def __get_file_data(self):
-        f = open(self.path, "r")
+        f = open(self.__path, "r")
         result = f.readlines()
         f.close()
         return result

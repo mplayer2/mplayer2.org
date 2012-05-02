@@ -1,2 +1,5 @@
 build/
 *.pyc
+
+# ignore generated posts folders
+source/2012/
