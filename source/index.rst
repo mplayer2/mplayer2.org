@@ -13,9 +13,9 @@ Curious about the differences? See the `comparison <differences>`_.
 
     <hr class="soften screenshot">
     <div class="row screenshot">
+      <div class="span4 screenshot"><img class="screenshot" src="_static/linux-screenshot-thumb.png" /></div>
       <div class="span4 screenshot"><img class="screenshot" src="_static/mac-screenshot-thumb.png" /></div>
-      <div class="span4 screenshot"><img class="screenshot" src="_static/mac-screenshot-thumb.png" /></div>
-      <div class="span4 screenshot last"><img class="screenshot" src="_static/mac-screenshot-thumb.png" /></div>
+      <div class="span4 screenshot last"><img class="screenshot" src="_static/windows-screenshot-thumb.png" /></div>
     </div>
 
     <hr class="soften">
