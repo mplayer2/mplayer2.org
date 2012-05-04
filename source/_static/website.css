@@ -179,3 +179,19 @@ div.full-news h1 {
 #archive h3, #archive h2 {
   border-bottom: none;
 }
+
+.span4f {
+  width: 270px;
+  margin-left: 10px;
+}
+
+.row .span4f:first-child {
+  margin-left: 40px;
+}
+
+.marketing {
+  font-family: inherit;
+  text-rendering: optimizelegibility;
+  margin: 0;
+  border-bottom: 0;
+}
