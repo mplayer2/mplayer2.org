@@ -1,5 +1,7 @@
 build/
 *.pyc
 
-# ignore generated posts folders
+# ignore generated posts folders and files
 source/2012/
+source/archive.rst
+source/latest_posts.rst

@@ -28,6 +28,9 @@ class TestPost(unittest.TestCase):
         self.assertEqual(self.post.path_component,
                          "2012/05/01/lorem-ipsum.rst")
 
+    def test_date_key(self):
+        self.assertEqual(self.post.date_key, "2012/05")
+
     def test_url(self):
         self.assertEqual(self.post.url,
                          "/2012/05/01/lorem-ipsum")

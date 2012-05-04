@@ -154,16 +154,28 @@ img#mplayer2-icon {
 }
 
 #latest-posts {
-	margin-top: 4em;
+  margin-top: 4em;
 }
 
-#latest-news > div > h2 + p {
-	font-size: 80%;
+#latest-news > div > h2 + p, div.full-news h1 + p {
+  font-size: 80%;
 }
 
 #latest-news > div > h2 {
-	font-size: 20px;
-	line-height: 20px;
-	border-bottom: none;
-	margin-bottom: 0;
+  font-size: 20px;
+  line-height: 20px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+div.full-news h1 {
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#archive h3, #archive h2 {
+  border-bottom: none;
 }

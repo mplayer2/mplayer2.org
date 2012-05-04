@@ -31,6 +31,11 @@ class Post(object):
         return "/".join(path_ary)
 
     @property
+    def date_key(self):
+        path_ary = self.__date_array()[::-1][:-1]
+        return "/".join(path_ary)
+
+    @property
     def abstract(self):
         self.__parse_data()
         return self.__abstract
