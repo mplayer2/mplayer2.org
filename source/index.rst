@@ -7,8 +7,7 @@
     it contains significant further development and supports a number of
     features not available in other Unix players.</p>
 
-For those who are curious about the differences click here for a
-`comparison <differences>`_.
+Curious about the differences? See the `comparison <differences>`_.
 
 .. raw:: html
 
@@ -25,18 +24,18 @@ For those who are curious about the differences click here for a
       <div class="row">
         <div class="span4">
           <h2>Lightweight</h2>
-          <p>mplayer2 is built for speed. You will be impressed by the efficient
-          use of system resources.</p>
+          <p>Watch movies on your toaster—mplayer2 is built for speed and
+          efficiency.</p>
         </div>
         <div class="span4">
-          <h2>Customizeable</h2>
-          <p>We have an option for anything that you can think of. Check the
-          documentation if you don't belive us!</p>
+          <h2>Customizable</h2>
+          <p>With its wide array of options, mplayer2 can be customized to fit
+          almost any needs. Be sure to check the manual!</p>
         </div>
         <div class="span4">
           <h2>Cross-platform</h2>
-          <p>mplayer2 is available on Linux, MacOSX and Windows with very similar
-          features and overall experience.</p>
+          <p>mplayer2 runs well on Linux, Mac OS X and Windows, providing
+          similar features and overall experience on each platform.</p>
         </div>
       </div>
     </div>
