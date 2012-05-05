@@ -188,6 +188,10 @@ div.full-news h1 {
   margin-bottom: 0;
 }
 
+#archive h3, #archive h2 {
+  border-bottom: none;
+}
+
 #latest-news {
   margin-top: 3em;
 }

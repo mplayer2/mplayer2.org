@@ -44,3 +44,6 @@ Latest news
 ===========
 
 .. include:: latest_posts.rst
+
+
+:doc:`Browse the archive </archive>`
