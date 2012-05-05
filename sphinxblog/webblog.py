@@ -6,7 +6,9 @@ class Webblog(object):
     def __init__(self, base_path, render_base_path):
         self.__base_path = base_path
         self.__render_base_path = render_base_path
-        self.__months = ["January", "February", "March", "April", "May", "..."]
+        self.__months = ["January", "February", "March", "April",
+                         "May", "June", "July", "August","September",
+                         "October", "November", "December"]
 
     def render_posts(self):
         for post_path in self.posts():
