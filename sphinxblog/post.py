@@ -9,12 +9,12 @@ class Post(object):
     @property
     def title(self):
         self.__parse_data()
-        return self.__title
+        return self.__title.decode('utf-8')
 
     @property
     def author(self):
         self.__parse_data()
-        return self.__author
+        return self.__author.decode('utf-8')
 
     @property
     def date(self):
@@ -38,12 +38,12 @@ class Post(object):
     @property
     def abstract(self):
         self.__parse_data()
-        return self.__abstract
+        return self.__abstract.decode('utf-8')
 
     @property
     def body(self):
         self.__parse_data()
-        return self.__body
+        return self.__body.decode('utf-8')
 
     def render(self, template_name='post'):
         tmpl_file = open(os.path.join(
@@ -51,7 +51,7 @@ class Post(object):
             'templates', '%s.rst' % template_name))
         template = Template(tmpl_file.read())
         tmpl_file.close()
-        return template.render(post=self)
+        return template.render(post=self).encode('utf-8')
 
     def render_to_base_path(self, base_path):
         output_path = os.path.join(base_path, self.path_component)
