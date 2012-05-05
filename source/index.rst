@@ -12,10 +12,25 @@ Curious about the differences? See the `comparison <differences>`_.
 .. raw:: html
 
     <hr class="soften screenshot">
+
     <div class="row screenshot">
-      <div class="span4 screenshot"><img class="screenshot" src="_static/linux-screenshot-thumb.png" /></div>
-      <div class="span4 screenshot"><img class="screenshot" src="_static/mac-screenshot-thumb.png" /></div>
-      <div class="span4 screenshot last"><img class="screenshot" src="_static/windows-screenshot-thumb.png" /></div>
+      <div class="span4 screenshot">
+        <a id="linux-screenshot" href="_static/linux-screenshot.png" title="mplayer2 on Linux">
+          <img class="screenshot" src="_static/linux-screenshot-thumb.png" />
+        </a>
+      </div>
+
+      <div class="span4 screenshot">
+        <a id="mac-screenshot" href="_static/mac-screenshot.png" title="mplayer2 on Mac OS X">
+          <img class="screenshot" src="_static/mac-screenshot-thumb.png" />
+        </a>
+      </div>
+
+      <div class="span4 screenshot">
+        <a id="windows-screenshot" href="_static/windows-screenshot.png" title="mplayer2 on Windows">
+          <img class="screenshot" src="_static/windows-screenshot-thumb.png" />
+        </a>
+      </div>
     </div>
 
     <hr class="soften">
