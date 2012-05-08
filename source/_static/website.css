@@ -262,3 +262,8 @@ div.full-news h1 {
     display: none;
   }
 }
+
+.section > dl > dt {
+  font-size: 15px;
+  line-height: 20px;
+}
