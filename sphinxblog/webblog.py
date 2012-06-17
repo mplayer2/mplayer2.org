@@ -52,14 +52,10 @@ class Webblog(object):
             os.path.realpath(self.__base_path), "*", "*", "*", "*.rst"))[::-1]
 
     def posts_archive(self):
-        def reduce_fn(memo, n):
-            key = Post(n).date_key
-            if not key in memo:
-                memo[key] = []
-            memo[key].append(n)
-            return memo
-
-        return reduce(reduce_fn, self.posts(), {})
+        out = {}
+        for n in self.posts():
+            out.setdefault(Post(n).date_key, []).append(n)
+        return out
 
     def latest_posts(self, limit):
         return self.posts()[:limit]

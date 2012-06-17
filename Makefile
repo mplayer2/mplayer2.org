@@ -38,7 +38,7 @@ update-man:
 
 website:
 	@echo "Building posts..."
-	@python sphinxblog/gen.py
+	@python3 sphinxblog/gen.py
 	@echo "Building site..."
 	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@echo
