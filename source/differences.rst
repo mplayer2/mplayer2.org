@@ -70,6 +70,14 @@ FFmpeg library copies and uses FFmpeg only through its public API. This
 eases maintenance and makes dynamic-linked binaries safe.
 
 
+Native OpenGL backend for MacOS X
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A native OpenGL backend has been added to manage the window creation for any
+kind of OpenGL based video output. The ``gl`` and ``corevideo`` video outputs
+have been adapted to support this new backend.
+
+
 Miscellaneous
 ~~~~~~~~~~~~~
 
@@ -84,6 +92,10 @@ Miscellaneous
   only)
 * Keep fullscreen state by default when switching between files
 * OSS4 volume control
+* Rewrore color matrix generation to match the ITU definition.
+* Removed the linking to the Carbon framework on MacOS X. This includes changes
+  to ``-vo corevideo``, drop of ``-vo quartz`` and a rewrite of the Finder
+  arguments support.
 * Various stuff not listed here...
 
 
