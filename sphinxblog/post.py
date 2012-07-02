@@ -46,9 +46,9 @@ class Post(object):
         return self.__body
 
     def render(self, template_name='post'):
-        tmpl_file = open(os.path.join(
-            os.path.dirname(os.path.realpath(__file__)),
-            'templates', '%s.rst' % template_name))
+        tmpl_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                 'templates', '%s.rst' % template_name)
+        tmpl_file = open(tmpl_path, 'r', encoding='utf-8')
         template = Template(tmpl_file.read())
         tmpl_file.close()
         return template.render(post=self)
@@ -58,7 +58,7 @@ class Post(object):
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
 
-        output = open(output_path, "w")
+        output = open(output_path, "w", encoding='utf-8')
         output.write(self.render())
         output.close()
 
@@ -108,7 +108,7 @@ class Post(object):
         self.__body = "".join(_body_ary).strip()
 
     def __get_file_data(self):
-        f = open(self.__path, "r")
+        f = open(self.__path, "r", encoding="utf-8")
         result = f.readlines()
         f.close()
         return result

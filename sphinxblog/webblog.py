@@ -17,9 +17,10 @@ class Webblog(object):
 
     def render_archive(self):
         accu = 'Archive\n=======\n\n'
-        tmpl_file = open(os.path.join(
+        tmpl_path = os.path.join(
             os.path.dirname(os.path.realpath(__file__)),
-            'templates', '%s.rst' % 'archive-subtitle'))
+            'templates', '%s.rst' % 'archive-subtitle')
+        tmpl_file = open(tmpl_path, 'r', encoding='utf-8')
         template = Template(tmpl_file.read())
         tmpl_file.close()
 
@@ -45,7 +46,7 @@ class Webblog(object):
             accu += post.render("short-post")
 
         output = open(os.path.join(
-            self.__render_base_path, "latest_posts.rst"), "w")
+            self.__render_base_path, "latest_posts.rst"), "w", encoding='utf-8')
         output.write(accu)
         output.close()
 
