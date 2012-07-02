@@ -1,11 +1,9 @@
 Downloads
 =========
 
-.. warning::
-    The mplayer2 team doesn't provide official binaries of the software.
-    We recommend you to *build it yourself* from the current git HEAD or
-    download one of the unofficial binaries.
-
+The mplayer2 team doesn't provide official builds of the software.
+We recommend you to **build it yourself** from the current git HEAD or
+download one of the **unofficial builds**.
 
 Source code
 -----------
@@ -21,8 +19,9 @@ first builds an up-to-date version of Libav libraries and libass and
 then builds the player statically linked against those.
 
 .. note::
-    See :ref:`this FAQ entry <faq-1>` about interaction with
-    existing MPlayer installations.
+    See :ref:`this FAQ entry <faq-1>` about interaction with existing MPlayer
+    installations. See :ref:`this FAQ entry <faq-3>` if you are have problems
+    using mplayer2 in combination with the SMPlayer GUI.
 
 .. csv-table::
     :header: "Git repository", "Description"
@@ -33,10 +32,11 @@ then builds the player statically linked against those.
     **Recommended for most users.**"
 
 
-Unofficial binaries
--------------------
+Unofficial builds
+-----------------
 
-These binaries are provided by third parties. Use at your own risk!
+Most of these builds are provided by third parties. The mplayer2 team is not
+affiliated with them, but we list them here for your own convenience.
 
 .. csv-table::
     :header: "Platform", ""

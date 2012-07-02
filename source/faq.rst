@@ -30,6 +30,15 @@ FAQ
    have workarounds for certain MPlayer misbehavior which can lead to
    trouble when it has been fixed in mplayer2.
 
+.. _faq-3:
+#. **SMPlayer GUI + mplayer2 is crashing, what do I do?**
+
+   There's a fork out there by lachs0r called SMPlayer2, which contains some
+   changes to SMPlayer that fix these issues.
+
+   The source code is available on `GitHub <https://github.com/lachs0r/SMPlayer2>`_,
+   while Windows builds of it are located `here <http://smplayer2.srsfckn.biz/>`_.
+
 #. **Why was MEncoder removed? Some people were still using it.**
 
    The MEncoder codebase was in very bad shape. The code quality and
