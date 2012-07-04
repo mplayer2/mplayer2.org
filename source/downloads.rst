@@ -20,8 +20,7 @@ then builds the player statically linked against those.
 
 .. note::
     See :ref:`this FAQ entry <faq-1>` about interaction with existing MPlayer
-    installations. See :ref:`this FAQ entry <faq-3>` if you are have problems
-    using mplayer2 in combination with the SMPlayer GUI.
+    installations.
 
 .. csv-table::
     :header: "Git repository", "Description"

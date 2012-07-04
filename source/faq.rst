@@ -30,7 +30,6 @@ FAQ
    have workarounds for certain MPlayer misbehavior which can lead to
    trouble when it has been fixed in mplayer2.
 
-.. _faq-3:
 #. **SMPlayer GUI + mplayer2 is crashing, what do I do?**
 
    There's a fork out there by lachs0r called SMPlayer2, which contains some
