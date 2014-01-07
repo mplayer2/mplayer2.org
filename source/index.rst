@@ -1,5 +1,7 @@
 .. unfortunately reST doesn't support nested inline markup: resort to raw html
 .. raw:: html
+    <p class="lead" style="color: red">
+    This project has been superseded by <a href="http://mpv.io">mpv</a>.</p>
 
     <p class="lead">
     mplayer2 is an advanced general-purpose video player. A fork of the
